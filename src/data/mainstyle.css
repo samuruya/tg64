@@ -11,6 +11,7 @@ body {
 }
 
 .title {
+    margin-top: 25vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,6 +48,7 @@ h1:hover {
 
 p {
     margin-top: 10vh;
+    font-size: 1.5em;
     text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
