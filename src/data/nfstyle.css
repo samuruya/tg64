@@ -1,0 +1,39 @@
+body {
+    background-color:#121212;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+h1 {
+    font-size: 8em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25vh;
+    margin-bottom: -11vh;
+}
+
+p {
+    margin-top: 10vh;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+a {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10vh;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #ffff04;
+}
