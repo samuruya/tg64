@@ -22,11 +22,21 @@ body {
     justify-content: center;
 }
 
+.row1 img {
+    margin: 1%;
+}
+
 h1 {
     font-size: 8em;
     text-transform: uppercase;
     text-align: center;
     flex-direction: row;
+}
+
+h2 {
+    font-size: 6em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 img {
@@ -35,7 +45,7 @@ img {
 }
 
 h1:hover {
-    color: #FFFF00;
+    color: #e8cc66;
 }
 
 p {
@@ -56,5 +66,5 @@ a {
 }
 
 a:hover {
-    color: #FFFF00;
+    color: #e8cc66;
 }
