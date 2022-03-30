@@ -7,10 +7,38 @@
     <body>
         <h2>Welcome to</h2>
         <div class="title">
-            <img src="src/data/imgs/titleslim.png" style="width:80%;">
+            <img src="src/data/titleslim.png" style="width:80%;">
         </div>
         <div class="entry">
-        <a href="src/main.html" id="Ent" >Enter</a>
+        Enter in:
+        </div>
+        <div class="timer">
+            <p id="time"></p>
+            <script>
+
+                var countDownDate = new Date("Apr 6, 2022 15:37:25").getTime();
+                
+
+                var x = setInterval(function() {
+                
+                  var now = new Date().getTime();
+                
+                  var distance = countDownDate - now;
+                
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                  document.getElementById("time").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("time").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+            </script>
         </div>
     </body>
 </html>

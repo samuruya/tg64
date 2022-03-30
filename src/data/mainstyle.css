@@ -35,15 +35,11 @@ h1 {
 }
 
 h2 {
-<<<<<<< HEAD
-    font-size: 6em;
-=======
-    font-size: 8em;
->>>>>>> 1451cc037657a251fd25bbb3adb00de8681565a4
+    font-size: 3em;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: -5%;
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 img {
