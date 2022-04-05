@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>T-Shirt</title>
+        <link rel="stylesheet" type="text/css" href="data/item.css">
+        <div class="menu">
+            <a href="coll.html">Back</a>
+            |
+            <a href="main.html">Main Page</a>
+        </div>
+    </head>
+    <body>
+        <h2>TrapGear</h2>
+        <div class="title">
+            <h1>T</h1>
+            <h1>s</h1>
+            <h1>h</h1>
+            <h1>i</h1>
+            <h1>r</h1>
+            <h1>t</h1>
+            <h1>s</h1>
+        </div>
+
+<div class="slides-wrapper">
+    <div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="data/imgs/t/Twhitefront.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="data/imgs/t/Twhiteside.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="data/imgs/t/Twhiteback.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+    <div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="data/imgs/t/Tblackside.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="data/imgs/t/Tblackfront.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="data/imgs/t/Tblackback.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+</div>
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<div class="deta">
+  <h2>30€</h2>
+  <h3>Größen Verfügbar:</h3>
+  <div class="grot">
+      <div class="gror1">
+          <div>White</div>
+          <div>Black</div>
+      </div>
+      <div class="gror2">
+          <div class="TWM">M</div>
+          |
+          <div class="TBM">M</div>
+      </div>
+      <div class="gror2">
+          <div class="TWL">L</div>
+          |
+          <div class="TBL">L</div>
+      </div>
+      <div class="gror2">
+          <div class="TWXL">XL</div>
+          |
+          <div class="TBXL">XL</div>
+      </div>
+  </div>
+</div>
+<h5><a href="https://www.instagram.com/typegear64/">Bei interrese auf insta melden</a></h5>
+    </body>
+</html>
