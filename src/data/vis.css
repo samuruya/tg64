@@ -1,0 +1,60 @@
+body {
+    background-color: #121212;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(imgs/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.menu {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+a {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10vh;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #e8cc66;
+    -webkit-transition: 200ms ease 20ms;
+    -moz-transition: 200ms ease 20ms;
+    transition: 200ms ease 20ms;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 8em;
+    text-transform: uppercase;
+    text-align: center;
+    flex-direction: row;
+}
+
+.txt {
+    text-transform: uppercase;
+    margin: 5vw;
+    margin-right: 55vw;
+    background: linear-gradient(to bottom, #66ffff71 0%, #ff66ff50 100%);
+    padding: 3vw;
+    border-radius: 30px;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .txt {
+        font-size: 4vw;
+        padding: 4vw;
+        margin-right: 40vw;
+    }
+    
+}
