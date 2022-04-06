@@ -3,8 +3,12 @@
 <html>
     <head>
         <title>Collections</title>
-        <link rel="stylesheet" type="text/css" href="data/collstyle.css">
-        <div><p>Made in Trap Basement</p></div>
+        <div class="easteregg">
+            <link rel="stylesheet" type="text/css" href="data/collstyle.css">
+        </div>
+        <!-- <div><p>Made in Trap Basement</p></div> -->
+        <input type="button" value="Made in Trap Basement" onclick="play()" class="egg" id="player">
+        <audio id="audio" src="data/direkt ausm keller.wav"></audio>
         <div class="menu">
             <a href="Vision.html">Vision</a>
             |
@@ -48,6 +52,16 @@
             </div>
             </a>
         </div>
+
+        <script>
+            function play() {
+              var audio = document.getElementById("audio");
+              audio.play();
+              document.getElementById("player").value="Now Playing: Direkt Ausm Keller by Roger53";
+              document.getElementById("player").className = "egg2";
+            }
+        </script>
+
     </body>
 </html>
 
