@@ -9,6 +9,12 @@ body {
     background-size: cover;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .menu {
     font-size: 4vw;
     text-align: center;
