@@ -123,7 +123,9 @@ a:hover {
 @media only screen and (max-width: 1000px) {
 
     body{
-        background: url(imgs/bfbackground.jpg) no-repeat center center;
+        background: url(imgs/bfbackground.jpg) no-repeat;
+        background-color: black;
+
     }
     
 }
